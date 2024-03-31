@@ -259,28 +259,95 @@
         </tr>
       </tbody>
     </table>
-    <br>
+    <br />
 
-    <form action="#">
-        <table border="2">
-            <thead><tr>
-                <th>isikan</th>
-                
-            </tr>
-            <tr>
-                <th>username <input type="text" name="" id=""></th>
-            </tr>
-            <tr><th><textarea name="" id="" cols="30" rows="10" placeholder="isikan pendapat"></textarea></th></tr>
-            <tr><th><input type="password" name="" id="" minlength="2" autocomplete="new-password" required></th></tr>
-            </thead>
-            <tbody><tr><td><input type="submit" value="submit ya">
-            </td></tr>
-            
+    <form action="/contoh" method="get">
+      <table border="2">
+        <thead>
+          <tr>
+            <th>isikan</th>
+          </tr>
+          <tr>
+            <th>username <input type="text" name="" id="" /></th>
+          </tr>
+          <tr>
+            <th>
+              <textarea
+                name="pendapat anda "
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="isikan pendapat"
+              ></textarea>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              isikan pw<input
+                type="password"
+                name=""
+                id=""
+                minlength="2"
+                autocomplete="new-password"
+                required
+              />
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="radio"
+                name="baju"
+                id="baju1"
+                value="kaos"
+                checked
+              />Baju kaos
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="baju" id="baju1" value="kemeja" />Baju
+              kemeja
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <label for="ukuran">Ukuran</label>
+              <select name="ukuran" id="ukuran">
+                <option value="" selected>pilih ukuran baju</option>
+                <option value="small">small</option>
+                <option value="large">large</option>
+                <option value="big">Big</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="submit ya" /></td>
+          </tr>
         </tbody>
-        </table>
+      </table>
     </form>
     <!-- semantic table
-   
+        pada bagian for = "" di label, biasanya value nya sama dengan id di input
+        bisa menggunakan tag div untuk merapihkan form / input nya
+        input button hanya untuk button sedangkan tag button digunakan untuk mengirim data / pindah halaman submit pun begitu
+        semua tag submit akan ke link / page tertentu tergantung dari atribut action di tag form
+        tag name berfungsi untuk mengirimkan data ke database
+        method di tag form berfungsi untuk mengirimkan data ke database juga
+        pada radio button ingat selau untuk menggunakan value name yang sama agar hanya terjadi 1 pilihan
+        pada bagian inputan ke database akan seperti ini name = value jika value kosong maka default nya on,
+        harap isi name dan value nya dalam input di html
+        atribut checked berfungsi sebagai default pilihan radio button
+        atribut selected berfungsi sebagai default pilihan select button
+        tambahan atribut
+        - min untuk minimal kata
+        - max maksimal kata
+        - required wajib di isi
+
+        
+
     -->
   </body>
 </html>
