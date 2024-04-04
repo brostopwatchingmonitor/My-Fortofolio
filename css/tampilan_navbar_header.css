@@ -158,30 +158,32 @@ nav ul li a {
 
 /* hero section */
 #hero {
-    height: 720px;
+    height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
-#hero > img{
-    width:1200px ;
-    opacity: 69%;
-}
-.hero-left > p{
+
+/* .hero-left > p{
     position: relative;
     text-indent: 50px; 
-} 
+}  */
 
 .hero-name {
     font-size: 3rem;
     font-weight: 700;
     margin: 0.5rem 0 1rem;
-    position: relative;
+    /* position: relative; */
 }
-.main-container>img{
+/* .main-container>img{
     position: absolute;
-}
+} */
 
 .hero-right>img{
-    position: relative;
+    /* position: relative; */
+    width: 80%;
+}
+.hero-right{
+    display: flex;
+    justify-content: center;
 }
