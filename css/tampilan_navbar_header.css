@@ -87,10 +87,11 @@ a {
 }
 
 /* title */
-.section-title{
+.section-title {
     margin: 1rem 0 4rem;
     font-size: 2rem;
 }
+
 .pre-title {
     text-transform: uppercase;
     letter-spacing: .5rem;
@@ -112,12 +113,14 @@ a {
     left: 0;
     top: 50%;
 }
+
 /* layout */
-.grid-3{
+.grid-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
 }
+
 /* logo and navigation menu */
 .nav {
     display: flex;
@@ -169,8 +172,9 @@ nav ul li a {
 #hero {
     height: 600px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     align-items: center;
+    gap: 10px;
 }
 
 /* .hero-left > p{
@@ -188,11 +192,20 @@ nav ul li a {
 /* .main-container>img{
     position: absolute;
 } */
+@media screen and (max-width: 899px) {
+    #hero {
+        margin-bottom: 90px;
+    }
+    .hero-right{
+        height: 400px;
+    }
+}
 
-.hero-right>img {
+.hero-right img {
     /* position: relative; */
     width: 90%;
 }
+
 
 .hero-right {
     display: flex;
@@ -210,23 +223,24 @@ nav ul li a {
 
 }
 
-.services-title{
+.services-title {
     text-align: center;
 }
-.service{
+
+.service {
     padding: 3rem 2rem;
     text-align: center;
     background-color: var(--primaryIconColorHover);
     border-radius: var(--itemBorderRadius);
 }
 
-.service h4{
+.service h4 {
     margin: 1.5rem 0;
     font-weight: 500;
     font-size: 1.05rem;
 }
 
-.service-icon{
+.service-icon {
     background-color: var(--lineColor);
     width: fit-content;
     margin: 0 auto;
@@ -234,6 +248,69 @@ nav ul li a {
     border-radius: 0.5rem;
 }
 
-.service-icon svg{
+.service-icon svg {
     fill: var(--primaryIconColor)
+}
+
+/* portofolio section */
+
+#portofolios {
+    padding: var(--sectionPadding);
+}
+
+.portofolio {
+    border-radius: var(--itemBorderRadius);
+    overflow: hidden;
+    border: 1px solid var(--borderColor);
+}
+
+.portofolio-cover {
+    height: 250px;
+}
+
+.portofolio-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portofolio-info {
+    padding: 2rem 1.5rem;
+}
+
+.portofolio-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portofolio h4 {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.portofolio-title a svg:hover {
+    fill: var(--primaryBackgroundColor);
+}
+
+.portofolio-title a svg {
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+}
+
+.portofolio-tags {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.portofolio-tags div {
+    font-size: .9rem;
+    border: 1px solid var(--borderColor);
+    padding: .4rem 1rem;
+    color: var(--secondryTextColor);
 }
