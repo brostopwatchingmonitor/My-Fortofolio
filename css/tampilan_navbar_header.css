@@ -172,7 +172,7 @@ nav ul li a {
 #hero {
     height: 600px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(00px, 1fr));
     align-items: center;
     gap: 10px;
 }
@@ -192,15 +192,15 @@ nav ul li a {
 /* .main-container>img{
     position: absolute;
 } */
-@media screen and (max-width: 899px) {
+/* @media screen and (max-width: 899px) {
     #hero {
-        margin-bottom: 90px;
+        margin-bottom: 50px;
     }
 
     .hero-right {
         height: 400px;
     }
-}
+} */
 
 .hero-right img {
     /* position: relative; */
