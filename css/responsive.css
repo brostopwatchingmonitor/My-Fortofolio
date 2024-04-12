@@ -39,6 +39,7 @@
 
     /* burger */
     .burger {
+        position: absolute;
         display: block;
         cursor: pointer;
     }
