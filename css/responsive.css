@@ -21,6 +21,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .gaje{
+        font-size: large;
+    }
     p {
         font-size: .9rem;
         line-height: 1.8rem;
